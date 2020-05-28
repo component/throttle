@@ -29,13 +29,14 @@ function resize(e) {
 
 ## API
 
-### throttle(fn, wait)
+### throttle(fn, wait, ignore)
 
 Creates a function that will call `fn` at most once every `wait` milliseconds.
 
 Supports leading and trailing invocation.
 
 `fn` will receive last context (`this`) and last arguments passed to a throttled wrapper before `fn` was invoked.
+`ignore` will disable trailing and ignore calls which come in too fast
 
 ## License
 
